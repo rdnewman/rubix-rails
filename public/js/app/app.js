@@ -195,7 +195,7 @@ var l20n=_RL20n_.l20n,
 
 	/* ROUTES */
 	var routes = (
-	  Routes(null, 
+	  Routes(null,
 	    Route({name: "root", path: "/", view: blank})
 	  )
 	);
@@ -239,20 +239,20 @@ var l20n=_RL20n_.l20n,
 	var Body = React.createClass({displayName: 'Body',
 	  render: function() {
 	    return (
-	      Container({id: "body"}, 
-	        Grid(null, 
-	          Row(null, 
-	            Col({sm: 12}, 
-	              PanelContainer(null, 
-	                Panel(null, 
-	                  PanelBody({className: "text-center"}, 
+	      Container({id: "body"},
+	        Grid(null,
+	          Row(null,
+	            Col({sm: 12},
+	              PanelContainer(null,
+	                Panel(null,
+	                  PanelBody({className: "text-center"},
 	                    React.DOM.p(null, "BLANK PAGE")
 	                  )
 	                )
 	              )
 	            )
 	          )
-	        ), 
+	        ),
 	        this.props.children
 	      )
 	    );
@@ -266,10 +266,10 @@ var l20n=_RL20n_.l20n,
 	      'container-open': this.state.open
 	    });
 	    return (
-	      Container({id: "container", className: classes}, 
-	        Sidebar(null), 
-	        Header(null), 
-	        Body(null, 
+	      Container({id: "container", className: classes},
+	        Sidebar(null),
+	        Header(null),
+	        Body(null,
 	          Footer(null)
 	        )
 	      )
@@ -289,8 +289,8 @@ var l20n=_RL20n_.l20n,
 	var Brand = React.createClass({displayName: 'Brand',
 	  render: function() {
 	    return this.transferPropsTo(
-	      NavHeader(null, 
-	        NavBrand({tabIndex: "-1"}, 
+	      NavHeader(null,
+	        NavBrand({tabIndex: "-1"},
 	          React.DOM.img({src: "/imgs/logo.png", alt: "rubix", width: "111", height: "28"})
 	        )
 	      )
@@ -301,33 +301,33 @@ var l20n=_RL20n_.l20n,
 	var Navigation = React.createClass({displayName: 'Navigation',
 	  render: function() {
 	    return this.transferPropsTo(
-	      NavContent({className: "pull-right"}, 
-	        Nav(null, 
-	          NavItem({className: "logout", href: "#"}, 
+	      NavContent({className: "pull-right"},
+	        Nav(null,
+	          NavItem({className: "logout", href: "#"},
 	            Icon({bundle: "fontello", glyph: "off-1"})
 	          )
 	        )
 	      )
 	    );
-	  }  
+	  }
 	});
 
 	var Header = React.createClass({displayName: 'Header',
 	  render: function() {
 	    return this.transferPropsTo(
-	      Grid({id: "navbar"}, 
-	        Row(null, 
-	          Col({xs: 12}, 
-	            NavBar({fixedTop: true, id: "rubix-nav-header"}, 
-	              Container({fluid: true}, 
-	                Row(null, 
-	                  Col({xs: 3, visible: "xs"}, 
+	      Grid({id: "navbar"},
+	        Row(null,
+	          Col({xs: 12},
+	            NavBar({fixedTop: true, id: "rubix-nav-header"},
+	              Container({fluid: true},
+	                Row(null,
+	                  Col({xs: 3, visible: "xs"},
 	                    SidebarBtn(null)
-	                  ), 
-	                  Col({xs: 6, sm: 4}, 
+	                  ),
+	                  Col({xs: 6, sm: 4},
 	                    Brand(null)
-	                  ), 
-	                  Col({xs: 3, sm: 8}, 
+	                  ),
+	                  Col({xs: 3, sm: 8},
 	                    Navigation(null)
 	                  )
 	                )
@@ -352,18 +352,18 @@ var l20n=_RL20n_.l20n,
 	var ApplicationSidebar = React.createClass({displayName: 'ApplicationSidebar',
 	  render: function() {
 	    return (
-	      React.DOM.div(null, 
-	        Grid(null, 
-	          Row(null, 
-	            Col({xs: 12}, 
-	              React.DOM.div({className: "sidebar-header"}, "PAGES"), 
-	              React.DOM.div({className: "sidebar-nav-container"}, 
-	                SidebarNav({style: {marginBottom: 0}}, 
-	                  SidebarNavItem({glyph: "icon-fontello-gauge", name: "Blank", href: "/"}), 
-	                  SidebarNavItem({glyph: "icon-feather-mail", name: React.DOM.span(null, "Menu ", BLabel({className: "bg-darkgreen45 fg-white"}, "3"))}, 
-	                    SidebarNav(null, 
-	                      SidebarNavItem({glyph: "icon-feather-inbox", name: "Inbox", href: "#"}), 
-	                      SidebarNavItem({glyph: "icon-outlined-mail-open", name: "Mail", href: "#"}), 
+	      React.DOM.div(null,
+	        Grid(null,
+	          Row(null,
+	            Col({xs: 12},
+	              React.DOM.div({className: "sidebar-header"}, "PAGES"),
+	              React.DOM.div({className: "sidebar-nav-container"},
+	                SidebarNav({style: {marginBottom: 0}},
+	                  SidebarNavItem({glyph: "icon-fontello-gauge", name: "Blank", href: "/"}),
+	                  SidebarNavItem({glyph: "icon-feather-mail", name: React.DOM.span(null, "Menu ", BLabel({className: "bg-darkgreen45 fg-white"}, "3"))},
+	                    SidebarNav(null,
+	                      SidebarNavItem({glyph: "icon-feather-inbox", name: "Inbox", href: "#"}),
+	                      SidebarNavItem({glyph: "icon-outlined-mail-open", name: "Mail", href: "#"}),
 	                      SidebarNavItem({glyph: "icon-dripicons-message", name: "Compose", href: "#"})
 	                    )
 	                  )
@@ -380,10 +380,10 @@ var l20n=_RL20n_.l20n,
 	var DummySidebar = React.createClass({displayName: 'DummySidebar',
 	  render: function() {
 	    return (
-	      Grid(null, 
-	        Row(null, 
-	          Col({xs: 12}, 
-	            React.DOM.div({className: "sidebar-header"}, "DUMMY SIDEBAR"), 
+	      Grid(null,
+	        Row(null,
+	          Col({xs: 12},
+	            React.DOM.div({className: "sidebar-header"}, "DUMMY SIDEBAR"),
 	            LoremIpsum({query: "1p"})
 	          )
 	        )
@@ -395,44 +395,44 @@ var l20n=_RL20n_.l20n,
 	var SidebarSection = React.createClass({displayName: 'SidebarSection',
 	  render: function() {
 	    return this.transferPropsTo(
-	      React.DOM.div({id: "sidebar"}, 
-	        React.DOM.div({id: "avatar"}, 
-	          Grid(null, 
-	            Row({className: "fg-white"}, 
-	              Col({xs: 4, collapseRight: true}, 
+	      React.DOM.div({id: "sidebar"},
+	        React.DOM.div({id: "avatar"},
+	          Grid(null,
+	            Row({className: "fg-white"},
+	              Col({xs: 4, collapseRight: true},
 	                React.DOM.img({src: "/imgs/avatars/avatar0.png", width: "40", height: "40"})
-	              ), 
-	              Col({xs: 8, collapseLeft: true, id: "avatar-col"}, 
-	                React.DOM.div({style: {top: 23, fontSize: 16, lineHeight: 1, position: 'relative'}}, "Anna Sanchez"), 
-	                React.DOM.div(null, 
-	                  Progress({id: "demo-progress", value: 30, min: 0, max: 100, color: "#ffffff"}), 
+	              ),
+	              Col({xs: 8, collapseLeft: true, id: "avatar-col"},
+	                React.DOM.div({style: {top: 23, fontSize: 16, lineHeight: 1, position: 'relative'}}, "Anna Sanchez"),
+	                React.DOM.div(null,
+	                  Progress({id: "demo-progress", value: 30, min: 0, max: 100, color: "#ffffff"}),
 	                  Link({href: "#"}, Icon({id: "demo-icon", bundle: "fontello", glyph: "lock-5"}))
 	                )
 	              )
 	            )
 	          )
-	        ), 
-	        SidebarControls(null, 
-	          SidebarControlBtn({bundle: "fontello", glyph: "docs", key: 0}), 
-	          SidebarControlBtn({bundle: "fontello", glyph: "chat-1", key: 1}), 
-	          SidebarControlBtn({bundle: "fontello", glyph: "chart-pie-2", key: 2}), 
-	          SidebarControlBtn({bundle: "fontello", glyph: "th-list-2", key: 3}), 
+	        ),
+	        SidebarControls(null,
+	          SidebarControlBtn({bundle: "fontello", glyph: "docs", key: 0}),
+	          SidebarControlBtn({bundle: "fontello", glyph: "chat-1", key: 1}),
+	          SidebarControlBtn({bundle: "fontello", glyph: "chart-pie-2", key: 2}),
+	          SidebarControlBtn({bundle: "fontello", glyph: "th-list-2", key: 3}),
 	          SidebarControlBtn({bundle: "fontello", glyph: "bell-5", key: 4})
-	        ), 
-	        React.DOM.div({id: "sidebar-container"}, 
-	          Sidebar({key: 0, active: true}, 
+	        ),
+	        React.DOM.div({id: "sidebar-container"},
+	          Sidebar({key: 0, active: true},
 	            ApplicationSidebar(null)
-	          ), 
-	          Sidebar({key: 1}, 
+	          ),
+	          Sidebar({key: 1},
 	            DummySidebar(null)
-	          ), 
-	          Sidebar({key: 2}, 
+	          ),
+	          Sidebar({key: 2},
 	            DummySidebar(null)
-	          ), 
-	          Sidebar({key: 3}, 
+	          ),
+	          Sidebar({key: 3},
 	            DummySidebar(null)
-	          ), 
-	          Sidebar({key: 4}, 
+	          ),
+	          Sidebar({key: 4},
 	            DummySidebar(null)
 	          )
 	        )
@@ -463,11 +463,11 @@ var l20n=_RL20n_.l20n,
 	  },
 	  render: function() {
 	    return (
-	      React.DOM.div(null, 
-	        Grid({gutterBottom: true}), 
-	        Grid({id: "footer", className: "text-center"}, 
-	          Row(null, 
-	            Col({xs: 12}, 
+	      React.DOM.div(null,
+	        Grid({gutterBottom: true}),
+	        Grid({id: "footer", className: "text-center"},
+	          Row(null,
+	            Col({xs: 12},
 	              React.DOM.div(null, "© 2014 Your Company Name Here - v", this.state.version)
 	            )
 	          )
