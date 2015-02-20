@@ -8,6 +8,9 @@ default: &default
   adapter: mysql2
   pool: 5
   timeout: 5000
+  host: # localhost
+  username: # username
+  password: # password
 
 development:
   <<: *default
@@ -18,7 +21,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  
+
 
 production:
   <<: *default
