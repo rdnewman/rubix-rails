@@ -1,28 +1,10 @@
-== README
+= README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Installation:
+ * Create `git clone` from remote repo
+ * Copy `config/database.yml.sample` to `config/database.yml`
+   * Edit `config/database.yml` to local settings
+   * `config/database.yml` is git-ignored, so local passwords safe
+ * Run `rake db:create` to confirm connection
+ * Run `rake test` to confirm installation
+ * Run `rails s` to bring up blank screen
