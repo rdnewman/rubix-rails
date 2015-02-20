@@ -2,10 +2,10 @@
 
 === Installation:
 
-* Create `git clone` from remote repo
-* Copy `config/database.yml.sample` to `config/database.yml`
-  * Edit `config/database.yml` to local settings
-  * `config/database.yml` is git-ignored, so local passwords safe
-* Run `rake db:create` to confirm connection 
-* Run `rake test` to confirm installation
-* Run `rails s` to bring up blank screen
+* Create <tt>git clone</tt> from remote repo
+* Copy <tt>config/database.yml.sample</tt> to <tt>config/database.yml</tt>
+  * Edit <tt>config/database.yml</tt> to local settings
+  * <tt>config/database.yml</tt> is git-ignored, so local passwords safe
+* Run <tt>rake db:create</tt> to confirm connection 
+* Run <tt>rake test</tt> to confirm installation
+* Run <tt>rails s</tt> to bring up blank screen
